@@ -11,10 +11,10 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 
 # Load saved model and vectorizer
-with open(r"C:\Users\sunil\Desktop\NIT Intership proj\Project List\9. Mental_Health_Detection\mental_health_model.pkl", "rb") as f:
+with open("mental_health_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open(r"C:\Users\sunil\Desktop\NIT Intership proj\Project List\9. Mental_Health_Detection\tfidf_vectorizer.pkl", "rb") as f:
+with open("tfidf_vectorizer.pkl", "rb") as f:
     vectorizer = pickle.load(f)
 
 # Preprocessing function
